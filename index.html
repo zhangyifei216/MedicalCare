@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>杭州与盟医疗技术有限公司</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+  <div class="cf header">
+    <div class="fl head_time"></div>
+    <div class="fr fwb head_set">
+    <span class="cor_4"><i class="refreshTime">20</i>M</span>后刷新
+      <span class="ml15 mr15 re">
+        <i class="vm pointer setting "></i>
+        <div class="setTime">
+          设置刷新间隔<input type="text" class="tac setTimeIpt" /> M
+          <a href="javascript:;" class="Determine">确定</a>
+          <a href="javascript:;" class="cancel">取消</a>
+        </div>
+      </span>
+      <span class="vm pointer signOut"></span>
+    </div>
+    <div class="head_name fz24 cor_5">杭州与盟医疗技术有限公司</div>
+  </div>
+  <div class="cf re content">
+    <div class="con_lf">
+      <div class="plate equipment re">
+        <h1 class="title">全院设备</h1>
+        <ul class="cf mb15 equip_ul">
+          <li class="fl">
+            <p class="re circleTxt">
+              <i class="inUse"></i>
+              <span><i class="countNumber cor_5 fwb" data-to="13546" data-speed="1000">13,546</i><br/>在用</span>
+            </p>
+          </li>
+          <li class="fl">
+            <p class="re circleTxt">
+              <i class="inRepair"></i>
+              <span><i class="countNumber cor_5 fwb" data-to="3546" data-speed="1000">3,546</i><br/>在修</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="plate equipProporte re">
+        <h1 class="title">设备占比</h1>
+        <div id="equipProporte" style="height:307px"></div>
+      </div>
+      <div class="plate departProporte re">
+        <h1 class="title">科室占比</h1>
+        <dl class="mt10 mb30 depart_dl">
+          <dt class="cf fz16">
+            <span class="fl fwb cor_5">手术科</span>
+            <span class="fr cor_0">5%(15)</span>
+          </dt>
+          <dd class="depart_dt"><i title="70%"></i></dd>
+        </dl>
+        <dl class="depart_dl">
+          <dt class="cf fz16">
+            <span class="fl fwb cor_5">在修</span>
+            <span class="fr cor_0">5%(15)</span>
+          </dt>
+          <dd class="depart_dt"><i title="60%"></i></dd>
+        </dl>
+        <dl class="depart_dl">
+          <dt class="cf fz16">
+            <span class="fl fwb cor_5">在用</span>
+            <span class="fr cor_0">5%(15)</span>
+          </dt>
+          <dd class="depart_dt"><i title="50%"></i></dd>
+        </dl>
+        <dl class="mt10 mb30 depart_dl">
+          <dt class="cf fz16">
+            <span class="fl fwb cor_5">在修</span>
+            <span class="fr cor_0">5%(15)</span>
+          </dt>
+          <dd class="depart_dt"><i title="40%"></i></dd>
+        </dl>
+        <dl class="depart_dl">
+          <dt class="cf fz16">
+            <span class="fl fwb cor_5">在用</span>
+            <span class="fr cor_0">5%(15)</span>
+          </dt>
+          <dd class="depart_dt"><i title="50%"></i></dd>
+        </dl>
+        <dl class="mt10 mb30 depart_dl">
+          <dt class="cf fz16">
+            <span class="fl fwb cor_5">在修</span>
+            <span class="fr cor_0">5%(15)</span>
+          </dt>
+          <dd class="depart_dt"><i title="70%"></i></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="con_ce">
+      <div class="re plate maintStatistics">
+        <h1 class="title">维修统计</h1>
+        <div class="cf">
+          <p class="cor_5 fz16 fl statistics_p statistics_week">周设备维修<br/><span class="fwb fz18"><i class="countNumber fz26" data-to="38" data-speed="1000">38</i>台</span></p>
+          <p class="cor_5 fz16 fl statistics_p statistics_month">月设备维修<br/><span class="fwb fz18"><i class="countNumber fz26" data-to="174" data-speed="1000">174</i>台</span></p>
+          <p class="cor_5 fz16 fl statistics_p statistics_complete">完成设备维修<br/><span class="fwb fz18"><i class="countNumber fz26" data-to="2643" data-speed="1000">2643</i>台</span></p>
+        </div>
+      </div>
+      <div class="re plate operatStatistics">
+        <h1 class="title">操作统计</h1>
+        <div id="operatStatistics" style="height:300px"></div>
+      </div>
+      <div class="re plate maintRepaire">
+        <h1 class="title">待修设备</h1>
+        <div class="mainTable">
+          <ul class="cf fixedThead">
+            <li class="fl">科室</li>
+            <li class="fl maintName">设备名称</li>
+            <li class="fl">院内编号</li>
+            <li class="fl">状态</li>
+            <li class="fl">工程师</li>
+            <li class="fl last">报修时间</li>
+          </ul>         
+          <div class="maquee">
+            <ul class="cf scrollTbody">
+              <li class="cf">
+                <div class="fl">手术科1</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科2</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+                <span class="mainTime">3天</span>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科3</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科4</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+                <span class="mainTime">3天</span>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科5</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科6</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+                <span class="mainTime">3天</span>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科7</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl">12.13  11:08</div>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科8</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+                <span class="mainTime">3天</span>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科9</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl">12.13  11:08</div>
+              </li>
+              <li class="cf">
+                <div class="fl">手术科10</div>
+                <div class="fl maintName">呼吸机</div>
+                <div class="fl">yybh-12353</div>
+                <div class="fl"><a href="">等待维修</a></div>
+                <div class="fl">工程师</div>
+                <div class="fl last">12.13  11:08</div>
+                <span class="mainTime">3天</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="con_rg">
+      <div class="re plate equipState">
+        <h1 class="title">设备状态</h1>
+        <div id="equipState" style="height:260px"></div>
+      </div>
+      <div class="re plate maintenance">
+        <div class="fz16 mainteTime">2016.01.01~2016.02.01</div>
+        <div class="cf mainteList">
+          <span><i class="fz30 fwb">25</i>总维修次数</span>
+          <span><i class="fz30 fwb">20</i>平均维修次数</span>
+        </div>
+        <h1 class="title">维修一览</h1>
+        <div class="re mb20 maint_con">
+          <i class="maint_in maint_up"></i>
+          <h1 class="fwn"><span class="fz26 cor_5">张小猫</span>月处理设备量40</h1>
+          <ul class="cf maint_ul">
+            <li class="fl"><i class="vm mr5 baoxiu"></i>报修33</li>
+            <li class="fl" class="fl"><i class="vm mr5 repair"></i>维修30</li>
+            <li class="fl">待修设备(10%)</li>
+            <li class="fl">待检设备(20%)</li>
+          </ul>
+        </div>
+        <div class="re mb20 maint_con">
+          <i class="maint_in maint_down"></i>
+          <h1 class="fwn"><span class="fz26 cor_5">张小猫</span>月处理设备量40</h1>
+          <ul class="cf maint_ul">
+            <li class="fl"><i class="vm mr5 baoxiu"></i>报修33</li>
+            <li class="fl" class="fl"><i class="vm mr5 repair"></i>维修30</li>
+            <li class="fl">待修设备(10%)</li>
+            <li class="fl">待检设备(20%)</li>
+          </ul>
+        </div>
+        <div class="re mb20 maint_con">
+          <i class="maint_in maint_eq"></i>
+          <h1 class="fwn"><span class="fz26 cor_5">张小猫</span>月处理设备量40</h1>
+          <ul class="cf maint_ul">
+            <li class="fl"><i class="vm mr5 baoxiu"></i>报修33</li>
+            <li class="fl" class="fl"><i class="vm mr5 repair"></i>维修30</li>
+            <li class="fl">待修设备(10%)</li>
+            <li class="fl">待检设备(20%)</li>
+          </ul>
+        </div>
+        <div class="re mt20 maint_con">
+          <i class="maint_in maint_up"></i>
+          <h1 class="fwn"><span class="fz26 cor_5">张小猫</span>月处理设备量40</h1>
+          <ul class="cf maint_ul">
+            <li class="fl"><i class="vm mr5 baoxiu"></i>报修33</li>
+            <li class="fl" class="fl"><i class="vm mr5 repair"></i>维修30</li>
+            <li class="fl">待修设备(10%)</li>
+            <li class="fl">待检设备(20%)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  /*定时刷新*/
+  var t = parseInt($('.refreshTime').html());
+  function refreshTime(){
+    t=t-1;
+    $('.refreshTime').html(t);
+    if (t==0){
+      window.location.reload();//刷新当前页面.
+    }
+  }
+  //window.setInterval(refreshTime,1000);
+  /*时间特效*/
+  function getNowFormatDate() {
+    var date = new Date();
+    var seperator1 = ".";
+    var seperator2 = ":";
+    var week = date.getDay(); 
+    var str = '';
+    switch(week){
+      case 1:
+          str = "周一";
+          break;
+      case 2:
+          str = "周二";
+          break;
+      case 3:
+          str = "周三";
+          break;
+      case 4:
+          str = "周四";
+          break;
+      case 5:
+          str = "周五";
+          break;
+      case 6:
+          str = "周六";
+          break;
+      default:
+          str = "周日";
+    }
+    var currentdate = date.getFullYear() + seperator1 + dateShow(date.getMonth()+1) + seperator1 + dateShow(date.getDate())
+    + "<span class='week ml15 mr25'>" +str+"</span><span class='time cor_4'>"+ dateShow(date.getHours()) + seperator2 + dateShow(date.getMinutes())
+    + seperator2 + dateShow(date.getSeconds())+"</span>";
+    $('.head_time').html(currentdate);
+  } 
+  function dateShow(str){ //时间格式
+    return str < 10 ? '0' + str : str;
+  }
+  getNowFormatDate();
+  /*设置*/
+  $('.setting').click(function(){
+    $('.setTime').slideDown();
+  })
+  $('.cancel').click(function(){
+    $('.setTime').slideUp();
+  })
+  var nub = /^[1-9]+[0-9]*$/;
+  $('.Determine').click(function(){
+    var inputVal = $('.setTimeIpt').val().trim();
+    if(inputVal == '' || !(nub.test(inputVal))){
+      $('.setTimeIpt').addClass('emptyRed').focus();
+    }else{
+      $('.refreshTime').html($('.setTimeIpt').val());
+    }
+  })
+  $('.setTimeIpt').bind('keyup', function(event) {
+    if (event.keyCode == "13") {
+      $('.Determine').click();
+    }
+  });
+  /*全院设备显示动画*/
+  $('.circleTxt').addClass('open') ;
+  /*科室占比长度动画*/
+  $('.depart_dt').each(function(){
+    var Width = $(this).find('i').attr('title');
+    $(this).find('i').animate({ 
+      width: Width
+    },1000) 
+  })
+  /*待修设备滚动效果*/
+  function scrollTbody(){
+    $(".scrollTbody").animate({  
+      marginTop : "-54px"  
+    },500,function(){  
+      $(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+    }) 
+  }
+  var timeScroll = setInterval(scrollTbody,3000);
+  $(".scrollTbody").hover(function(){
+    clearInterval(timeScroll);
+  },function(){
+    timeScroll = setInterval(scrollTbody,3000);
+  })         
+})  
+</script>
+<!--数字动态增加动画start-->
+<script src="js/countNumber.js"></script>
+<!--数字动态增加动画end-->
+<!--背景气泡动画start-->
+<script src="js/quietflow.js"></script>  
+<script type="text/javascript">
+  $("body").quietflow({
+    theme : "bouncingBalls",
+    specificColors : ['#183141','#284354','#384f5d'],
+    backgroundCol : "#1a2333",
+    maxRadius : 20,
+    bounceSpeed : 70,
+    bounceBallCount : 200,
+    transparent : true
+  }) 
+</script>
+<!--背景气泡动画end-->
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript">
+    // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    
+    // 使用
+    require(
+        [
+            'echarts',
+            'echarts/chart/pie', // 使用柱状图就加载bar模块，按需加载,
+            'echarts/chart/line' 
+        ],
+        function (ec) {
+            // 基于准备好的dom，初始化echarts图表
+            var equipState = ec.init(document.getElementById('equipState')); 
+            var equipProporte = ec.init(document.getElementById('equipProporte')); 
+            var operatStatistics = ec.init(document.getElementById('operatStatistics')); 
+            var option01 = {
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{b} : {c} ({d}%)"
+                },
+                color:['#01f6fb', '#06ccd3','#0ba2ab','#11808a','#15505d'] ,
+                calculable : false,
+                series : [
+                    {
+                        name:'面积模式',
+                        type:'pie',
+                        radius : [20, 90],
+                        center : ['50%', 140],
+                        roseType : 'area',
+                        x: '50%',               // for funnel
+                        max: 40,                // for funnel
+                        sort : 'ascending',     // for funnel
+                        itemStyle: {
+                          normal: {
+                            label : {
+                              show:true,
+                              textStyle:{
+                                fontSize:12,
+                                color:"#c3c3c3"
+                              },
+                              formatter:'{b}\n{c} %'
+                            }
+                          }
+                        },
+                        data:[
+                            {value:43, name:'正常'},
+                            {value:10, name:'待修'},
+                            {value:17, name:'待检'},
+                            {value:15, name:'设备'},
+                            {value:15, name:'科室'}
+                        ]
+                    }
+                ]
+            };
+            var option02 = {
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{b} : {c} ({d}%)"
+                },
+                color:['#01f6fb', '#06ccd3','#0ba2ab','#11808a','#15505d'] ,
+                calculable : false,
+                series : [
+                    {
+                        name:'访问来源',
+                        type:'pie',
+                        radius : ['35%', '50%'],
+                        itemStyle: {
+                          normal: {
+                            label : {
+                              show:true,
+                              textStyle:{
+                                fontSize:12,
+                                color:"#c3c3c3"
+                              },
+                              formatter:'{b}\n{c} %'
+                            }
+                          }
+                        },
+                        data:[
+                            {value:25, name:'胃镜'},
+                            {value:25, name:'医用冰箱'},
+                            {value:25, name:'其他'},
+                            {value:25, name:'单极电刀'}
+                        ]
+                    }
+                ]
+            };
+            var option03 = {
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                 //x:'right',
+                  //orient:'vertical' ,
+                  itemGap:20,
+                  //y:'center',
+                  textStyle:{
+                    color: '#fff'
+                  },
+                  data:['报修','维修','报废']
+              },
+              grid:{
+                  x:27,
+                  y:20,
+                  x2:20,
+                  y2:20,
+                  show:true,  //表示开启
+                  borderWidth: 0
+               },
+              color:['#01f6fb', '#06ccd3','#c76b48'] ,
+              calculable : false,
+              xAxis : [
+                  {
+                      type : 'category',
+                      boundaryGap : false,
+                      splitLine: {   
+                         show: true,  
+                         lineStyle:{
+                              color:"#2e3644",    
+                              type:"solid"
+                         }
+                      },
+                      axisLabel:{
+                          textStyle:{
+                               color:"#fff"//x轴，y轴的数字颜色
+                          }
+                      },
+                      axisLine:{//x轴、y轴的深色轴线
+                          show: false
+                      },
+                      axisTick:{
+                          show: false
+                      },
+                      data : ['1','2','3','4','5','6','7','8','9','10','11','12']
+                  }
+              ],
+              yAxis : [
+                  {
+                      type : 'value' ,
+                      max: 100,//区域最大值，同时还可设置[0,'100%']，来自适应最大值
+                      interval:20,//每隔区域20
+                      splitLine:{  
+                            show:false  
+                      },
+                      axisLabel:{
+                          textStyle:{
+                               color:"#fff"//x轴，y轴的数字颜色
+                          }
+                      },
+                      axisLine:{//x轴、y轴的深色轴线
+                          show: false
+                      },
+                      axisTick:{
+                          show: false
+                      }      
+
+                  }
+              ],
+              series : [
+                  {
+                      name:'报废',
+                      type:'line',
+                      smooth:true,
+                      symbol:'none',
+                      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                      data:[10, 12, 14, 16, 20, 22, 20, 12, 14, 22, 12, 14]
+                  },
+                  {
+                      name:'维修',
+                      type:'line',
+                      smooth:true,
+                      symbol:'none',
+                      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                      data:[30, 32, 43, 41, 39, 30, 40, 32, 31, 34, 46, 33]
+                  },
+                  {
+                      name:'报修',
+                      type:'line',
+                      smooth:true,
+                      symbol:'none',
+                      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                      data:[60, 62, 64, 70, 60, 62, 71, 72, 61, 64, 60, 70]
+                  }
+              ]
+          };
+            // 为echarts对象加载数据 
+            equipState.setOption(option01); 
+            equipProporte.setOption(option02);
+            operatStatistics.setOption(option03);
+        }
+    );
+</script>
+</html>
